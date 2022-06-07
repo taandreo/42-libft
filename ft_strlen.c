@@ -6,16 +6,18 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 02:12:38 by tairribe          #+#    #+#             */
-/*   Updated: 2022/05/29 18:14:34 by tairribe         ###   ########.fr       */
+/*   Updated: 2022/06/02 18:51:30 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}

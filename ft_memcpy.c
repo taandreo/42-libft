@@ -1,19 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/29 14:37:01 by tairribe          #+#    #+#             */
-/*   Updated: 2022/05/29 16:11:13 by tairribe         ###   ########.fr       */
+/*   Created: 2022/06/03 18:19:26 by tairribe          #+#    #+#             */
+/*   Updated: 2022/06/06 23:33:23 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int ch)
+#include "libft.h"
+
+void	*ft_memcpy(void *restrict dest, const void *restrict src, size_t n)
 {
-	if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')
-		|| (ch >= '0' && ch <= '9'))
-		return (1);
-	return (0);
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
+		i++;
+	}
+	return (dest);
 }

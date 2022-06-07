@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/29 18:47:40 by tairribe          #+#    #+#             */
-/*   Updated: 2022/05/29 19:49:41 by tairribe         ###   ########.fr       */
+/*   Created: 2022/06/03 18:11:06 by tairribe          #+#    #+#             */
+/*   Updated: 2022/06/06 19:10:56 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *str, int ch)
-{	
-	char c;
-	int i;
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
+{
+	size_t	i;
 
 	i = 0;
-	c = (char) ch;
-	while(str[i])
+	while (i < n)
 	{
-		if (str[i] == c)
-			return ((char *)&str[i]);
+		((unsigned char *)s)[i] = '\0';
 		i++;
 	}
-	if (str[i] == c)
-		return ((char *)&str[i]);
-	return (0);
 }
