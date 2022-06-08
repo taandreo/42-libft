@@ -8,6 +8,7 @@ clang -Wall -Wextra -Werror -I . -c ft_isalpha.c -o ft_isalpha.o
 clang -Wall -Wextra -Werror -I . -c ft_isascii.c -o ft_isascii.o
 clang -Wall -Wextra -Werror -I . -c ft_isdigit.c -o ft_isdigit.o
 clang -Wall -Wextra -Werror -I . -c ft_memchr.c -o ft_memchr.o
+clang -Wall -Wextra -Werror -I . -c ft_memcmp.c -o ft_memcmp.o
 clang -Wall -Wextra -Werror -I . -c ft_memcpy.c -o ft_memcpy.o
 clang -Wall -Wextra -Werror -I . -c ft_memmove.c -o ft_memmove.o
 clang -Wall -Wextra -Werror -I . -c ft_memset.c -o ft_memset.o
@@ -20,6 +21,6 @@ clang -Wall -Wextra -Werror -I . -c ft_strncmp.c -o ft_strncmp.o
 clang -Wall -Wextra -Werror -I . -c ft_strnstr.c -o ft_strnstr.o
 clang -Wall -Wextra -Werror -I . -c ft_strrchr.c -o ft_strrchr.o
 clang -Wall -Wextra -Werror -I . -c ft_tolower.c -o ft_tolower.o
-ar rcs libft.a ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_memchr.o ft_memcpy.o ft_memmove.o ft_memset.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o
+ar rcs libft.a ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o
 make: Leaving directory '/home/tairan/42/libft'
  
