@@ -6,7 +6,7 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/05 15:58:03 by tairribe          #+#    #+#             */
-/*   Updated: 2022/06/06 23:33:34 by tairribe         ###   ########.fr       */
+/*   Updated: 2022/06/09 03:47:41 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (dest);
 	}
 	i = n - 1;
-	while (i >= 0)
+	while (n--)
 	{
 		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 		i--;

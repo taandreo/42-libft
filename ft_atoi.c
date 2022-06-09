@@ -6,7 +6,7 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 10:18:43 by tairribe          #+#    #+#             */
-/*   Updated: 2022/06/02 10:49:36 by tairribe         ###   ########.fr       */
+/*   Updated: 2022/06/09 01:16:28 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 int	ft_atoi(const char *str)
 {
 	int	i;
-	int sign;
-	int t;
-	
+	int	sign;
+	int	t;
+
 	i = 0;
 	t = 0;
 	sign = 1;

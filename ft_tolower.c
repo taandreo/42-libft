@@ -6,13 +6,13 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 14:37:01 by tairribe          #+#    #+#             */
-/*   Updated: 2022/05/29 18:36:35 by tairribe         ###   ########.fr       */
+/*   Updated: 2022/06/09 01:19:39 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int ch)
 {
 	if (ch >= 'A' && ch <= 'Z')
-		return ch + 32;
-	return ch;
+		return (ch + 32);
+	return (ch);
 }

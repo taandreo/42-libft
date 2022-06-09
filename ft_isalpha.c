@@ -6,13 +6,13 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 14:37:01 by tairribe          #+#    #+#             */
-/*   Updated: 2022/05/29 18:12:40 by tairribe         ###   ########.fr       */
+/*   Updated: 2022/06/09 01:37:01 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int ch)
 {
-	if ((ch >= ' ' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
+	if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
 		return (1);
 	return (0);
 }

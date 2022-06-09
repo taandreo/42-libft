@@ -1,32 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/29 18:47:40 by tairribe          #+#    #+#             */
-/*   Updated: 2022/06/09 01:18:41 by tairribe         ###   ########.fr       */
+/*   Created: 2022/05/29 14:37:01 by tairribe          #+#    #+#             */
+/*   Updated: 2022/06/09 01:51:22 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *str, int ch)
-{	
-	unsigned char	c0;
-	unsigned char	c1;
-	int				i;
-
-	i = 0;
-	c0 = (unsigned char) ch;
-	while (str[i])
-	{
-		c1 = (unsigned char) str[i];
-		if (c1 == c0)
-			return ((char *)&str[i]);
-		i++;
-	}
-	c1 = (unsigned char) str[i];
-	if (c1 == c0)
-		return ((char *)&str[i]);
+int	ft_isprint(int ch)
+{
+	if (ch >= ' ' && ch <= '~')
+		return (1);
 	return (0);
 }
