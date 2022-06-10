@@ -6,7 +6,7 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 18:56:28 by tairribe          #+#    #+#             */
-/*   Updated: 2022/06/09 01:16:54 by tairribe         ###   ########.fr       */
+/*   Updated: 2022/06/09 00:35:23 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *s)
 	char	*dest;
 
 	len = ft_strlen(s);
-	dest = malloc(len + 1 * sizeof(char) + 1);
+	dest = malloc(len * sizeof(char) + 1);
 	if (!dest)
 		return (NULL);
 	ft_strlcpy(dest, s, (len + 1));
