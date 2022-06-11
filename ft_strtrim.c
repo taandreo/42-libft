@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/29 18:47:40 by tairribe          #+#    #+#             */
-/*   Updated: 2022/06/10 19:00:28 by tairribe         ###   ########.fr       */
+/*   Created: 2022/06/10 18:57:33 by tairribe          #+#    #+#             */
+/*   Updated: 2022/06/10 23:38:57 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *str, int ch)
-{	
-	unsigned char	c0;
-	unsigned char	c1;
-	int				i;
+#include "libft.h"
 
-	i = 0;
-	c0 = (unsigned char) ch;
-	while (str[i])
-	{
-		c1 = (unsigned char) str[i];
-		if (c1 == c0)
-			return ((char *)&str[i]);
-		i++;
-	}
-	c1 = (unsigned char) str[i];
-	if (c1 == c0)
-		return ((char *)&str[i]);
-	return (0);
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	size_t	start;
+	size_t	end;
+	size_t	len;
+
+	start = 0;
+	if (!*s1)
+		return (ft_strdup(""));
+	len = ft_strlen(s1);
+	end = len - 1;
+	while (s1[start] && ft_strchr(set, s1[start]))
+		start++;
+	while (end > 0 && ft_strchr(set, s1[end]))
+		end--;
+	if (start > end)
+		return (ft_strdup(""));
+	return (ft_substr(s1, start, ++end - start));
 }
