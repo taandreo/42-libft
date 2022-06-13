@@ -31,14 +31,17 @@ This is a brief summary for the functions that i have written.
 
 #### Part 1
 
-| Name       | summary | parameters                 |
-|------------|---------|----------------------------|
-| ft_isalpha |         | `int	ft_isalpha(int ch)` |
-| ft_isdigit |         |                            |
-| ft_isalnum |         |                            |
-| ft_isascii |         |                            |
+| Name        | Summary                                     | Parameters              | status :robot:     |
+| ----------- | ------------------------------------------- | ----------------------- | ------------------ |
+| ft\_isalpha | Check if the caracter is alpha              | int ft\_isalpha(int ch) | ok :green\_circle: |
+| ft\_isdigit | Check if the caracter is a digit            | int ft\_isdigit(int ch) | ok :green\_circle: |
+| ft\_isalnum | Check if the caracter is a alphanumeric     | int ft\_isalnum(int ch) | ok :green\_circle: |
+| ft\_isascii | Check if the caracter is in the ascii table | int ft\_isascii(int ch) | ok :green\_circle: |
+| ft\_isprint | Check if the caracter is printable          | int ft\_isprint(int ch) | ok :green\_circle: |
 
 #### Part 2
+
+
 #### Bonus
 
 
