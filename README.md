@@ -4,11 +4,11 @@ Hey ! This is my implementation of the libft header from 42 school (São Paulo -
 
 The tests are not validated by the moulinette :robot: yet, so be careful :)
 
-### make
+## make
 
 To compile and make some tests, it's necessary to run `make all` in the root folder. This will create the object files in the root directory, and the libft.a. The `make fclean` will erase all data created by make including the object files.  
 
-### versions
+## versions
 
 For this particulary project, i used the **clang version 13.0.1** to compile the code, and **valgrind-3.19.0** to catch memory leaks.  
 
@@ -29,11 +29,10 @@ This has to be configured in your initialization shell file to be make persisten
 
 This is a brief summary for the functions that i have written.
 
-#### Part 1
+### Part 1
 
-| Part 1      |                                                                                          |                                                                         |                    |
-| ----------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------ |
 | Name        | Summary                                                                                  | Parameters                                                              | status :robot:     |
+| ----------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------ |
 | ft\_isalpha | Check if the caracter is alpha                                                           | int ft\_isalpha(int ch)                                                 | ok :green\_circle: |
 | ft\_isdigit | Check if the caracter is a digit                                                         | int ft\_isdigit(int ch)                                                 | ok :green\_circle: |
 | ft\_isalnum | Check if the caracter is a alphanumeric                                                  | int ft\_isalnum(int ch)                                                 | ok :green\_circle: |
@@ -57,13 +56,13 @@ This is a brief summary for the functions that i have written.
 | ft\_calloc  | Allocates memory for an array of num elements of size bytes                              | void \*ft\_calloc(size\_t num, size\_t size);                           | ok :green\_circle: |
 | ft\_strdup  | returns a pointer to a new string which is a du‐plicate of the string s                  | char \*ft\_strdup(const char \*s);                                      | ok :green\_circle: |
 
-#### Part 2
+### Part 2
 
 
-#### Bonus
+### Bonus
 
 
-### Contact
+## Contact
 
 Feel free to hit me to talk about the code.
 
