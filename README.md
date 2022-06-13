@@ -29,6 +29,19 @@ This has to be configured in your initialization shell file to be make persisten
 
 This is a brief summary for the functions that i have written.
 
+#### Part 1
+
+| Name       | summary | parameters                  |
+|------------|---------|-----------------------------|
+| ft_isalpha |         | `int	ft_isalpha(int ch)`c |
+| ft_isdigit |         |                             |
+| ft_isalnum |         |                             |
+| ft_isascii |         |                             |
+
+#### Part 2
+#### Bonus
+
+
 ### Contact
 
 Feel free to hit me to talk about the code.
