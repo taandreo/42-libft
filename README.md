@@ -2,7 +2,7 @@
 
 Hey ! This is my implementation of the libft header from 42 school (São Paulo - Brazil) !
 
-The tests are not validated by the moulinette yet, so be careful :)
+The tests are not validated by the moulinette :robot: yet, so be careful :)
 
 ### make
 
@@ -14,17 +14,16 @@ For this particulary project, i used the **clang version 13.0.1** to compile the
 
 ## run
 
-To compile some code using the library, you can use the command bellow:
-
-```
+To compile the test code using the library (after make), the command below can be used:
+```shell
 clang main.c -g -L . -lft -I . && ./a.out
 ```
 
-or create a alias to do all the job in a simple manner:
-
+or do like me, and create an alias to do all the job in a simple manner:
+```shell
+runlib='make re > /dev/null && clang main.c -g -L . -lft -I . && ./a.out'
 ```
-unlib='make re > /dev/null && clang main.c -g -L . -lft -I . && ./a.out'
-```
+This has to be configured in your initialization shell file to be make persistent. Generally `~/bashrc` if you are using bash has your default shell.
 
 ## functions
 
