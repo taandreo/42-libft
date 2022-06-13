@@ -31,12 +31,12 @@ This is a brief summary for the functions that i have written.
 
 #### Part 1
 
-| Name       | summary | parameters                  |
-|------------|---------|-----------------------------|
-| ft_isalpha |         | `int	ft_isalpha(int ch)`c |
-| ft_isdigit |         |                             |
-| ft_isalnum |         |                             |
-| ft_isascii |         |                             |
+| Name       | summary | parameters                 |
+|------------|---------|----------------------------|
+| ft_isalpha |         | `int	ft_isalpha(int ch)` |
+| ft_isdigit |         |                            |
+| ft_isalnum |         |                            |
+| ft_isascii |         |                            |
 
 #### Part 2
 #### Bonus
