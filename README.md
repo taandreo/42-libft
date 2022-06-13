@@ -10,7 +10,9 @@ To compile and make some tests, it's necessary to run `make all` in the root fol
 
 ### versions
 
-For this particulary project, i used the **clang version 13.0.1** to compile the code, and **valgrind-3.19.0** to catch memory leaks.
+For this particulary project, i used the **clang version 13.0.1** to compile the code, and **valgrind-3.19.0** to catch memory leaks.  
+
+## run
 
 To compile some code using the library, you can use the command bellow:
 
@@ -26,7 +28,7 @@ unlib='make re > /dev/null && clang main.c -g -L . -lft -I . && ./a.out'
 
 ## functions
 
-Now the fun begins. This is a brief summary for the functions that i have written.
+This is a brief summary for the functions that i have written.
 
 ### Contact
 
