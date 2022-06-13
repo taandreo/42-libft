@@ -31,8 +31,8 @@ This is a brief summary for the functions that i have written.
 
 ### Contact
 
-Feel free to hit me to talk about the code, with the contact options below.
+Feel free to hit me to talk about the code.
 
-linkedin link here
+[linkedin](https://www.linkedin.com/in/taandreo/)
 
 **“I'd far rather be happy than right any day.”**
