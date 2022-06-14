@@ -5,6 +5,16 @@ CFLAGS = -Wall -Wextra -Werror -g -I .
 
 NAME = libft.a
 
+BONUS = ft_lstnew.o \
+		ft_lstadd_front.o \
+		ft_lstsize.o \
+		ft_lstlast.o \
+		ft_lstadd_back.o \
+		ft_lstdelone.o \
+		ft_lstclear.o \
+		ft_lstiter.o \
+		ft_lstmap.o
+
 SRCS = $(wildcard ft_*.c)
 OBJS = $(SRCS:.c=.o)
 
@@ -21,6 +31,8 @@ fclean: clean
 	rm -f $(NAME)
 
 all: $(NAME)
+
+bonus: $(BONUS)
 
 re: fclean all
 
