@@ -30,8 +30,7 @@ This has to be configured in your initialization shell file to be make persisten
 This is a brief summary for the functions that i have written.
 
 ### Part 1
-
-| Name        | Summary                                                                                  | Parameters                                                              | status :robot:     |
+| Name        | Description                                                                              | Parameters                                                              | status :robot:     |
 | ----------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------ |
 | ft\_isalpha | Check if the caracter is alpha                                                           | int ft\_isalpha(int ch)                                                 | ok :green\_circle: |
 | ft\_isdigit | Check if the caracter is a digit                                                         | int ft\_isdigit(int ch)                                                 | ok :green\_circle: |
@@ -57,7 +56,19 @@ This is a brief summary for the functions that i have written.
 | ft\_strdup  | returns a pointer to a new string which is a du‐plicate of the string s                  | char \*ft\_strdup(const char \*s);                                      | ok :green\_circle: |
 
 ### Part 2
-
+| Name            | Description                                                                                   | Parameters                                                                     | status :robot:     |
+| --------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------ |
+| ft\_substr      | returns a substring from the string ’s’                                                       | char \*ft\_substr(char const \*s, unsigned int start, size\_t len);            | ok :green\_circle: |
+| ft\_strjoin     | returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.              | char \*ft\_substr(char const \*s, unsigned int start, size\_t len)ft\_strjoin; | ok :green\_circle: |
+| ft\_strtrim     | returns a copy of ’s1’ with the characters in ’set’ removed from the beginning and the end.   | char \*ft\_strtrim(char const \*s1, char const \*set);                         | ok :green\_circle: |
+| ft\_split       | returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter. | char \*\*ft\_split(char const \*s, char c);                                    | ok :green\_circle: |
+| ft\_itoa        | returns a string representing the integer received as an argument.                            | char \*ft\_itoa(int n);                                                        | ok :green\_circle: |
+| ft\_strmapi     | Applies the function ’f’ to each character of the string ’s’                                  | char \*ft\_strmapi(char const \*s, char (\*f)(unsigned int, char));            | ok :green\_circle: |
+| ft\_striteri    | Applies the function ’f’ on each character of the string passed as argument                   | void ft\_striteri(char \*s, void (\*f)(unsigned int, char\*));                 | ok :green\_circle: |
+| ft\_putchar\_fd | Outputs the character ’c’ to the given file descriptor.                                       | void ft\_putchar\_fd(char c, int fd);                                          | ok :green\_circle: |
+| ft\_putstr\_fd  | Outputs the string ’s’ to the given file descriptor.                                          | void ft\_putstr\_fd(char \*s, int fd);                                         | ok :green\_circle: |
+| ft\_putendl\_fd | Outputs the string ’s’ to the given file descriptor followed by a newline.                    | void ft\_putendl\_fd(char \*s, int fd);                                        | ok :green\_circle: |
+| ft\_putnbr\_fd  | Outputs the integer ’n’ to the given file descriptor.                                         | void ft\_putnbr\_fd(int n, int fd);                                            | ok :green\_circle: |
 
 ### Bonus
 
