@@ -1,0 +1,346 @@
+#include <ctype.h>
+//#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "libft.h"
+#include <bsd/string.h>
+
+
+// FT_STRCHR
+// int main(void)
+// {
+// 	char st1[] = "Abacate com pera";
+// 	char c1 = 'p';
+// 	char st2[] = "Morango";
+// 	char c2 = 'f';
+// 	char st3[] = "Alecrim dourado";
+// 	char c3 = '\0';
+	
+// 	printf("strchr: %s | ft_strchr: %s\n", strchr(st1, c1), ft_strchr(st1, c1));
+// 	printf("strchr: %s | ft_strchr: %s\n", strchr(st2, c2), ft_strchr(st2, c2));
+// 	printf("strchr: %s | ft_strchr: %s\n", strchr(st3, c3), ft_strchr(st3, c3));
+// }
+
+// FT_STRRCHR
+// int main(void)
+// {
+// 	char st1[] = "Abacate com pare";
+// 	char c1 = 'a';
+// 	char st2[] = "Morango";
+// 	char c2 = 'o';
+// 	char st3[] = "Alecrim dourado";
+// 	char c3 = '\0';
+	
+// 	printf("strrchr: %s | ft_strrchr: %s\n", strrchr(st1, c1), ft_strrchr(st1, c1));
+// 	printf("strrchr: %s | ft_strrchr: %s\n", strrchr(st2, c2), ft_strrchr(st2, c2));
+// 	printf("strrchr: %s | ft_strrchr: %s\n", strrchr(st3, c3), ft_strrchr(st3, c3));
+// }
+
+// int		main(void)
+// {
+// 	// Compara a string somente até o byte
+// 	// char	*s1 = "abcdefghi";
+// 	// char	*s2 = "abcdEfghi";
+// 	char	*s1 = "ab";
+// 	char	*s2 = "abc";
+// 	int res;
+// 	int ft_res;
+// 	int n;
+
+// 	n = 4;
+// 	res = strncmp(s1, s2, n);
+// 	ft_res = ft_strncmp(s1, s2, n);
+// 	printf("%i\n", res);
+// 	printf("%i\n", ft_res);
+// }
+
+// FT_ATOI
+// int main(void)
+// {
+// 	char *st1 = "678a78";
+// 	char *st2 = "-+9090";
+// 	char *st3 = "2147483648";
+// 	char *st4 = "+23648";
+
+// 	printf("atoi: %i | ft_atoi: %i\n", atoi(st1), ft_atoi(st1));
+// 	printf("atoi: %i | ft_atoi: %i\n", atoi(st2), ft_atoi(st2));
+// 	printf("atoi: %i | ft_atoi: %i\n", atoi(st3), ft_atoi(st3));
+// 	printf("atoi: %i | ft_atoi: %i\n", atoi(st4), ft_atoi(st4));
+// }
+
+// FT_STRLCAT
+// int main(void)
+// {
+// 	int re;
+// 	char *dest;
+// 	dest = strcpy(calloc(11, sizeof(char)), "abacate");
+// 	re = ft_strlcat(dest, "99999", 12);
+// 	printf("%s\n", dest);
+// 	printf("%i\n", re);
+// }
+
+// FT_STRNSTR
+// int main(void)
+// {
+// 	char big[] = "Melao com abacate e acucar";
+// 	char little[] = "c";
+
+// 	printf("strnstr: %s | ft_strnstr: %s\n", strnstr(big, little, sizeof(big)), ft_strnstr(big, little, sizeof(big)));
+
+// 	// strnstr(big, little, sizeof(big))
+// }
+
+// FT_STRLCPY
+// int				main(void)
+// {
+// 	int 	src_size;
+// 	char 	*src = "9VpPiFVXRkwvtNQsH";
+
+// 	src = calloc(18, sizeof(char));
+// 	char dest[] = "strinasdfasdfasdf";
+// 	src = "string";
+// 	src_size = ft_strlcpy(dest, src, 5);
+// 	printf("src: %s\n", src);
+// 	printf("dest: %s\n", dest);
+// 	printf("src_size: %d\n", src_size);
+// 	return(0);
+// }
+
+// FT_STRDUP
+// int main(void)
+// {
+// 	char *src;
+// 	char *dst;
+
+// 	dst = ft_strdup(src);
+
+// 	printf("src: %s\n", src);
+// 	printf("dst: %s\n", dst);
+// }
+
+// FT_MEMSET
+
+// int main(void)
+// {
+// 	char str[] = "asdjfakljsdhfalsdhkjlfhasldkf";
+// 	printf("%s\n", (char *) ft_memset(str, 'K', 29));
+
+// }
+
+// FT_BZERO
+// int main(void)
+// {
+// 	char str[] = "asdjfakljsdhfalsdhkjlfhasldkf";
+// 	ft_bzero(str, 29);
+// 	printf("%s", str);
+// }
+
+
+// FT_MEMCPY
+// int main(void)
+// {
+// 	char st1[] = "TTTTTTT";
+// 	char st2[] = "FFFFFFF";
+
+// 	printf("%s\n", (char *) ft_memcpy(st2, st1, sizeof(st1)));
+// }
+
+// FT_MEMMOVE
+// int main(void)
+// {
+// 	char st1[] = "TTTTTTT";
+// 	char st2[] = "FFFFFFF";
+
+// 	printf("%s\n", (char *) ft_memmove(st2, st1, sizeof(st1)));
+// }
+
+// FT_MEMCHR
+// int main(void)
+// {
+// 	char st1[] = "alecrim alecrim dourado";
+// 	char *st2;
+	
+// 	st2 = ft_memchr(st1, 'd', sizeof(st1));
+// 	printf("%s\n", st2);
+// }
+
+// FT_MEMCMP
+// int		main(void)
+// {
+// 	// Compara a string somente até o byte
+// 	// char	*s1 = "abcdefghi";
+// 	// char	*s2 = "abcdEfghi";
+// 	char	*s1 = "abc";
+// 	char	*s2 = "ab";
+// 	int res;
+// 	int ft_res;
+// 	int n;
+
+// 	n = 4;
+// 	res = memcmp(s1, s2, n);
+// 	ft_res = ft_memcmp(s1, s2, n);
+// 	printf("%i\n", res);
+// 	printf("%i\n", ft_res);
+// }
+// FT_CALLOC
+// int main(void)
+// {
+// 	char *no = ft_calloc(8, sizeof(char));
+// 	free(no);
+	// char *ft = ft_calloc(8, sizeof(char));
+
+	// ft_strlcpy(no, "abacate", 8);
+	// ft_strlcpy(ft, "abacate", 8);
+
+	// printf("no: %s\n", no);
+// }
+// FT_SUBSTR
+// int main(void)
+// {
+// 	// char str[] = "abacate";
+// 	char *sub;
+
+// 	// sub = ft_substr("tripouille", 1, 1);
+// 	// printf("%s\n", sub);
+// 	// free(sub);
+// 	sub = ft_substr("0123456789", 9, 10);
+// 	printf("%s\n", sub);
+// }
+
+// FT_STRJOIN
+// int main(void)
+// {
+// 	char *s1 = "";
+// 	char *s2 = "";
+// 	ft_strjoin(s1, s2);
+// }
+
+// FT_STRTRIM
+// int main(void)
+// {
+// 	char *set = "cale";
+// 	char *word = "aaleccraac";
+
+// 	printf("%s\n", ft_strtrim(word, set));
+// }
+
+// FT_SPLIT
+// int main (void)
+// {
+// 	int i = 0;
+// 	char** dict;
+// 	dict = ft_split("abacate/laranja//limao///", '/');
+// 	while(dict[i])
+// 	{
+// 		printf("%s\n", dict[i]);
+// 		i++;
+// 	}
+// 	return (0);
+// }
+
+// //abacate/laranja//limao///
+
+// FT_ITOA
+// int main(void)
+// {
+// 	printf("%s", ft_itoa(0));
+// 	return (0);
+// }
+
+// FT_STRMAPI
+// char	f(unsigned int u, char c)
+// {
+// 	return (c + u);
+// }
+
+// int main(void)
+// {
+// 	char	str[] = "abacate";
+// 	printf("%s", ft_strmapi(str, f));
+// 	return (0);
+// }
+
+// FT_PUTCHAR_FD
+// int main(void)
+// {
+// 	int i = 0;
+// 	char *p = "Abacate";
+	
+// 	while (p[i])
+// 	{
+// 		ft_putchar_fd(p[i], 1);
+// 		i++;
+// 	}
+// 	return (0);
+// }
+
+// BONUS
+// FT_LSTNEW
+// int	main(void)
+// {	
+// 	int f;
+// 	int *num = malloc(sizeof(int));
+// 	*num = 42;
+// 	t_list *node =  ft_lstnew(num);
+// 	f = *(int*)(node->content);
+// 	printf("node: %i\n", f);
+// }
+
+// FT_LSTNEW
+// int	main(void)
+// {	
+// 	int f;
+// 	int *num = malloc(sizeof(int));
+// 	*num = 42;
+// 	t_list *node =  ft_lstnew(num);
+// 	f = *(int*)(node->content);
+// 	printf("node: %i\n", f);
+// }
+
+// FT_LSTADD_FRONT
+// int	main(void)
+// {	
+// 	int f;
+// 	int size;
+// 	t_list *node0;
+// 	t_list *lst;
+// 	node0 = NULL;
+// 	int *num = malloc(sizeof(int));
+// 	*num = 42;
+// 	lst = ft_lstnew(num);
+// 	ft_lstadd_front(&lst, ft_lstnew(num));
+// 	ft_lstadd_front(&lst, ft_lstnew(num));
+// 	f = *(int*)(lst->content);
+// 	size = ft_lstsize(lst);
+// 	printf("node: %i\n", f);
+// 	printf("size: %i\n", size);
+// 	size = ft_lstsize(node0);
+// 	printf("size: %i\n", size);
+// 	printf("point: %p\n", node0);
+// }
+
+// FT_LSTDELONE
+
+void del(void *v)
+{
+	free(v);
+}
+
+int	main(void)
+{	
+	int f;
+	int size;
+	t_list *node0;
+	t_list *lst;
+	node0 = NULL;
+	int *num = malloc(sizeof(int));
+	*num = 42;
+	lst = ft_lstnew(num);
+	ft_lstadd_front(&lst, ft_lstnew(num));
+	f = *(int*)(lst->content);
+	printf("%i\n", *(int *)lst->content);
+	printf("%i\n", *(int *)lst->next->content);
+	ft_lstdelone(lst->next, del);
+	printf("%i\n", *(int *)lst->content);
+	printf("%i\n", (int *)lst->next->content);
+}

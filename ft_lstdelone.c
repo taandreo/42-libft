@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/12 17:58:24 by tairribe          #+#    #+#             */
-/*   Updated: 2022/06/13 22:50:02 by tairribe         ###   ########.fr       */
+/*   Created: 2022/06/15 21:41:42 by tairribe          #+#    #+#             */
+/*   Updated: 2022/06/15 22:35:03 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	char	*nb;
-
-	nb = ft_itoa(n);
-	ft_putstr_fd(nb, fd);
-	free(nb);
+	if (!lst || !del)
+		return ;
+	del(lst->content);
+	free(lst);
 }
