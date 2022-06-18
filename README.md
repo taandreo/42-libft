@@ -71,7 +71,17 @@ This is a brief summary for the functions that i have written.
 | ft\_putnbr\_fd  | Outputs the integer ’n’ to the given file descriptor.                                         | void ft\_putnbr\_fd(int n, int fd);                                            | ok :green\_circle: |
 
 ### Bonus
-
+| Name              | Description                                                                                         | Parameters                                                                         | status :robot:     |
+| ----------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------ |
+| ft\_lstnew        | Allocates and returns a new node in the list.                                                       | t\_list \*ft\_lstnew(void \*content);                                              | ok :green\_circle: |
+| ft\_lstadd\_front | Adds the node ’new’ at the beginning of the list.                                                   | void ft\_lstadd\_front(t\_list \*\*lst, t\_list \*new);                            | ok :green\_circle: |
+| ft\_lstsize       | Counts the number of nodes in a list.                                                               | int ft\_lstsize(t\_list \*lst);                                                    | ok :green\_circle: |
+| ft\_lstlast       | Returns the last node of the list.                                                                  | t\_list \*ft\_lstlast(t\_list \*lst);                                              | ok :green\_circle: |
+| ft\_lstadd\_back  | Adds the node ’new’ at the end of the list.                                                         | void ft\_lstadd\_back(t\_list \*\*lst, t\_list \*new);                             | ok :green\_circle: |
+| ft\_lstdelone     | Frees the memory ofthe node’s content using the function ’del’                                      | void ft\_lstdelone(t\_list \*lst, void (\*del)(void\*));                           | ok :green\_circle: |
+| ft\_lstclear      | Deletes and frees the given node and every successor of that node                                   | void ft\_lstclear(t\_list \*\*lst, void (\*del)(void\*));                          | ok :green\_circle: |
+| ft\_lstiter       | Iterates the list ’lst’ and applies the function ’f’ on the content of each node.                   | void ft\_lstiter(t\_list \*lst, void (\*f)(void \*));                              | ok :green\_circle: |
+| ft\_lstmap        | Iterates the list ’lst’ and applies the function ’f’. Creates a new list resulting the applications | t\_list \*ft\_lstmap(t\_list \*lst, void \*(\*f)(void \*), void (\*del)(void \*)); | ok :green\_circle: |
 
 ## Contact
 
