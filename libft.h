@@ -6,7 +6,7 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 19:17:14 by tairribe          #+#    #+#             */
-/*   Updated: 2022/06/19 15:24:56 by tairribe         ###   ########.fr       */
+/*   Updated: 2022/06/20 22:33:31 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int		ft_atoi(const char *str);
 char	*ft_strchr(const char *str, int ch);
 size_t	ft_strlen(const char *s);
 char	*ft_strrchr(const char *str, int ch);
-int		ft_strncmp(const char *lhs, char *rhs, size_t count);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);

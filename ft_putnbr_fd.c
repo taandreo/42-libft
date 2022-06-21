@@ -6,7 +6,7 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/12 17:58:24 by tairribe          #+#    #+#             */
-/*   Updated: 2022/06/13 22:50:02 by tairribe         ###   ########.fr       */
+/*   Updated: 2022/06/20 22:05:21 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,17 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*nb;
-
-	nb = ft_itoa(n);
-	ft_putstr_fd(nb, fd);
-	free(nb);
+	if (n == -2147483648)
+	{
+		ft_putstr_fd("-2147483648", fd);
+		return ;
+	}
+	if (n < 0)
+	{
+		ft_putstr_fd("-", fd);
+		n = n * -1;
+	}
+	if (n > 9)
+		ft_putnbr_fd(n / 10, fd);
+	ft_putchar_fd((n % 10) + '0', fd);
 }
