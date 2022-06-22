@@ -1,6 +1,6 @@
 .PHONY: libft.a all clean fclean re
 
-CC = clang
+CC = cc
 CFLAGS = -Wall -Wextra -Werror -g -I .
 
 NAME = libft.a
