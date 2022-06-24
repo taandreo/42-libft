@@ -1,4 +1,4 @@
-.PHONY: libft.a all clean fclean re
+.PHONY: libft.a all clean fclean re log bonus
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -I .
@@ -51,7 +51,6 @@ BONUS = ft_lstnew.c \
 		ft_lstiter.c \
 		ft_lstmap.c
 
-#SRCS = $(wildcard ft_*.c)
 OBJS = $(MAIN:.c=.o)
 BONUS_OBJS = $(BONUS:.c=.o)
 ALL_OBJS = $(OBJS) $(BONUS_OBJS)
