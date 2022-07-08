@@ -2,7 +2,7 @@
 
 Hey ! This is my implementation of the libft header from 42 school (São Paulo - Brazil) !
 
-The tests are not validated by the moulinette :robot: yet, so be careful :)
+The tests are already validated by the moulinette :robot: :)
 
 ## make
 
