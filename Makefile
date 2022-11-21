@@ -1,7 +1,7 @@
 .PHONY: libft.a all clean fclean re log bonus
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I .
+CFLAGS = -Wall -Wextra -Werror -arch x86_64 -I .
 
 NAME = libft.a
 
@@ -39,8 +39,16 @@ MAIN =  ft_atoi.c \
 		ft_substr.c \
 		ft_tolower.c \
 		ft_toupper.c \
-		get_next_line.c
-
+		get_next_line.c \
+		append_flag_00.c \
+		append_flag_01.c \
+		arg_parse.c \
+		get_str.c \
+		linked_list.c \
+		utils_00.c \
+		utils_01.c \
+		ft_utoa.c \
+		ft_printf.c
 
 BONUS = ft_lstnew.c \
 		ft_lstadd_front.c \
@@ -57,7 +65,7 @@ BONUS_OBJS = $(BONUS:.c=.o)
 ALL_OBJS = $(OBJS) $(BONUS_OBJS)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@ -I include
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
