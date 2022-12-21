@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_squeeze.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/12 17:52:12 by tairribe          #+#    #+#             */
-/*   Updated: 2022/11/29 20:18:45 by tairribe         ###   ########.fr       */
+/*   Created: 2022/12/02 15:41:53 by tairribe          #+#    #+#             */
+/*   Updated: 2022/12/02 15:59:06 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char *s, int fd)
+/* Remove all c characteres from the string s */
+char	*ft_squeeze(char *s, char c)
 {
-	size_t	i;
+	int	i;
+	int	j;
 
 	i = 0;
-	while (s[i])
+	j = 0;
+	while (s[i] != '\0')
 	{
-		ft_putchar_fd(s[i], fd);
+		if (s[i] != c)
+			s[j++] = s[i];
 		i++;
 	}
-	ft_putchar_fd('\n', fd);
+	s[j] = '\0';
+	return (s);
 }

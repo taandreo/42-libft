@@ -48,7 +48,9 @@ MAIN =  ft_atoi.c \
 		utils_00.c \
 		utils_01.c \
 		ft_utoa.c \
-		ft_printf.c
+		ft_printf.c \
+		ft_squeeze.c \
+		ft_atoi_base.c
 
 BONUS = ft_lstnew.c \
 		ft_lstadd_front.c \
