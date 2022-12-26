@@ -1,7 +1,13 @@
 .PHONY: libft.a all clean fclean re log bonus
 
-CC = cc
-CFLAGS = -Wall -Wextra -Werror -arch x86_64 -I .
+CC = clang
+CFLAGS = -Wall -Wextra -Werror -I .
+
+UNAME := $(shell uname)
+
+ifeq ($(UNAME), Darwin)
+	CFLAGS = -Wall -Wextra -Werror -arch x86_64 -I .
+endif
 
 NAME = libft.a
 
