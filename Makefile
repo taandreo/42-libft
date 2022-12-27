@@ -1,4 +1,4 @@
-.PHONY: libft.a all clean fclean re log bonus
+.PHONY: all clean fclean re log
 
 CC = clang
 CFLAGS = -Wall -Wextra -Werror -I .
@@ -56,9 +56,8 @@ MAIN =  ft_atoi.c \
 		ft_utoa.c \
 		ft_printf.c \
 		ft_squeeze.c \
-		ft_atoi_base.c
-
-BONUS = ft_lstnew.c \
+		ft_atoi_base.c \
+		ft_lstnew.c \
 		ft_lstadd_front.c \
 		ft_lstsize.c \
 		ft_lstlast.c \
@@ -69,8 +68,6 @@ BONUS = ft_lstnew.c \
 		ft_lstmap.c
 
 OBJS = $(MAIN:.c=.o)
-BONUS_OBJS = $(BONUS:.c=.o)
-ALL_OBJS = $(OBJS) $(BONUS_OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@ -I include
@@ -79,20 +76,15 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 clean: 
-	rm -f $(ALL_OBJS)
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 all: $(NAME)
 
-bonus: $(ALL_OBJS)
-	ar rcs $(NAME) $(ALL_OBJS)
-
 re: fclean all
 
 log:
-	@echo $(OBJS)
-	@echo $(BONUS_OBJS)
 	@echo $(OBJS)
 	@echo $(CFLAGS)
