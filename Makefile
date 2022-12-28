@@ -1,6 +1,6 @@
 .PHONY: all clean fclean re log
 
-CC = clang
+CC = cc
 CFLAGS = -Wall -Wextra -Werror -I .
 
 UNAME := $(shell uname)
