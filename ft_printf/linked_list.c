@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   linked_list_bonus.c                                :+:      :+:    :+:   */
+/*   linked_list.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 18:53:49 by tairribe          #+#    #+#             */
-/*   Updated: 2022/11/20 21:03:52 by tairribe         ###   ########.fr       */
+/*   Updated: 2023/01/07 16:49:57 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,19 @@ void	free_line(void *v)
 	free(l);
 }
 
-static void	print_str(char *s, int len)
+static void	print_str(char *s, int len, int fd)
 {
 	int	i;
 
 	i = 0;
 	while (i < len)
 	{
-		ft_putchar_fd(s[i], 1);
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
 }
 
-size_t	print_list(t_list *lst)
+size_t	print_list(t_list *lst, int fd)
 {
 	size_t	size;
 	t_line	*l;
@@ -44,7 +44,7 @@ size_t	print_list(t_list *lst)
 	while (lst)
 	{
 		l = lst->content;
-		print_str(l->line, l->len);
+		print_str(l->line, l->len, fd);
 		size += l->len;
 		lst = lst->next;
 	}

@@ -6,7 +6,7 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 23:02:25 by tairan            #+#    #+#             */
-/*   Updated: 2022/11/21 16:00:30 by tairribe         ###   ########.fr       */
+/*   Updated: 2023/01/07 16:55:40 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ typedef struct s_flag
 }			t_flag;
 
 int		ft_printf(const char *format, ...);
+int		ft_dprintf(int fd, const char *format, ...);
 // UTILS_00
 char	*char_to_str(char c);
 char	*get_string(char *s);
@@ -53,7 +54,7 @@ char	*ft_str_toupper(char *s);
 // UTILS_01
 char	*get_ptr(unsigned long p);
 // LINKED_LIST
-size_t	print_list(t_list *lst);
+size_t	print_list(t_list *lst, int fd);
 void	free_line(void *v);
 // ARG_PARSE_00
 t_flag	arg_parse(const char *s, va_list args);

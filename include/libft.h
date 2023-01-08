@@ -6,7 +6,7 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 19:17:14 by tairribe          #+#    #+#             */
-/*   Updated: 2022/12/15 20:05:09 by tairribe         ###   ########.fr       */
+/*   Updated: 2023/01/07 20:04:04 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,5 +75,6 @@ char	*get_next_line(int fd);
 char	*ft_utoa(unsigned long n, int base);
 char	*ft_squeeze(char *s, char c);
 int		ft_atoi_base(const char *str, int base);
+int		ft_freemt(void **mt);
 
 #endif
