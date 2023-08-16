@@ -6,7 +6,7 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 19:17:14 by tairribe          #+#    #+#             */
-/*   Updated: 2023/06/22 23:09:10 by tairribe         ###   ########.fr       */
+/*   Updated: 2023/08/02 21:03:29 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,5 +78,6 @@ int		ft_atoi_base(const char *str, int base);
 int		ft_freemt(void **mt);
 char	ft_is_number(const char *str);
 long	ft_strtol(const char *str);
+int		ft_max(int a, int b);
 
 #endif

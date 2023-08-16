@@ -19,7 +19,7 @@ LIBFT_SRC = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isasci
 		ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c ft_squeeze.c \
 		ft_atoi_base.c ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 		ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c ft_utoa.c \
-		get_next_line.c ft_freemt.c ft_is_number.c ft_strtol.c \
+		get_next_line.c ft_freemt.c ft_is_number.c ft_strtol.c ft_max.c \
 
 FT_PRINTF_SRC = ft_printf/append_flag_00.c ft_printf/append_flag_01.c ft_printf/arg_parse.c \
 			    ft_printf/get_str.c ft_printf/linked_list.c	ft_printf/utils_00.c \
