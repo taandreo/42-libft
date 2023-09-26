@@ -6,7 +6,7 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 19:17:14 by tairribe          #+#    #+#             */
-/*   Updated: 2023/08/19 15:10:54 by tairribe         ###   ########.fr       */
+/*   Updated: 2023/09/19 21:28:59 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,5 +82,6 @@ int		ft_max(int a, int b);
 int		ft_strcmp(char *s1, char *s2);
 int		ft_is_space(int c);
 char	*ft_strndup(const char *str, size_t n);
+int		ft_lenmt(void **mt);
 
 #endif
