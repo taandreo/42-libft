@@ -6,7 +6,7 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 19:17:14 by tairribe          #+#    #+#             */
-/*   Updated: 2023/10/04 20:14:41 by tairribe         ###   ########.fr       */
+/*   Updated: 2024/03/17 22:08:45 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,12 @@
 # include <unistd.h>
 
 # define BUFFER_SIZE 4096
+
+typedef enum e_bool
+{
+	false,
+	true
+}			t_bool;
 
 typedef struct s_list
 {
@@ -84,5 +90,7 @@ int		ft_is_space(int c);
 char	*ft_strndup(const char *str, size_t n);
 int		ft_lenmt(void **mt);
 int		ft_strcasecmp(char *s1, char *s2);
+t_bool	ft_startswith(const char *str, const char *prefix);
+t_bool	ft_endswith(const char *str, const char *suffix);
 
 #endif

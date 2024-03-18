@@ -6,7 +6,7 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 23:02:25 by tairan            #+#    #+#             */
-/*   Updated: 2023/06/29 23:27:55 by tairribe         ###   ########.fr       */
+/*   Updated: 2024/03/13 21:23:58 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,6 @@
 # define FT_PRINTF_H
 # include <stdarg.h>
 # include "libft.h"
-
-typedef enum e_bool
-{
-	false,
-	true
-}			t_bool;
 
 typedef struct s_line
 {
